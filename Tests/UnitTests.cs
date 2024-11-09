@@ -114,7 +114,7 @@ namespace GithubActionsLab
         [Test]
         public void Power_Invalid()
         {
-            Assert.Throws<FormatException>(() => Program.Power("1", "2"));
+            Assert.Throws<FormatException>(() => Program.Power("1", "a"));
             Assert.Throws<FormatException>(() => Program.Power("a", "1"));
             Assert.Throws<FormatException>(() => Program.Power("a", "a"));
         }
